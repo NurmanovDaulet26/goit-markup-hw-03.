@@ -11,10 +11,8 @@ body {
 }
 
 header{
-    width: 1600px;
-    display: inline-block;
-    border-bottom: 1px solid transparent;
-    border-color: #ECECEC;
+    border-bottom: 1px solid #ECECEC;;
+    text-align: center;
     
 }
 
@@ -28,7 +26,7 @@ header{
 .header_inner{
     display: flex;
     align-items: center;
-   
+    
 }
 
 .logo {
@@ -64,7 +62,7 @@ header{
     list-style: none;
     font-weight: 500;
     font-style: normal;
-    padding: 32px 0;
+    padding: 0;
     margin: 0;
     display: flex;
 }
@@ -73,8 +71,8 @@ header{
 .menu__list-link {
     text-decoration: none;
     color: #212121;
-
-    
+    padding: 32px 0;
+    display: block;
 }
 
 .menu__list-item + .menu__list-item {
@@ -94,9 +92,9 @@ header{
     text-decoration: none;
     align-items: center;
     font-weight: 500;
-    padding: 32px 0;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
 
 }
 
@@ -105,8 +103,7 @@ header{
     color: var(--blue-color);
 }
 
-.contacts_item+.contacts_item {
-    top: 24px;
+.contacts_item +.contacts_item {
     text-decoration: none;
     margin-left: 50px;
 }
@@ -114,13 +111,11 @@ header{
 .contacts_link {
     text-decoration: none;
     color: #757575;
-    
+    padding: 32px 0;
     
 }
 
 .section {
-    width: 1600px;
-    list-style: none;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -128,14 +123,12 @@ header{
 
 .background{
     background-color: var(--main-color);
-    justify-content: space-between;
     text-align: center;
+    padding: 200px 0;
 
 }
 
-.title{
-    padding: 106px 0;
-}
+
 
 .main_title {
     width: 696px;
@@ -193,9 +186,10 @@ header{
     margin: 0;
 }
 
-.features{
-    width: 270px;
-    margin-right: 30px;
+
+.features_item + .features_item{
+   margin-left: 30px;
+   width: 270px;
 }
 
 
@@ -219,6 +213,7 @@ header{
 
 .work{
     padding-top: 0;
+
 }
 
 .work_title {
@@ -229,21 +224,20 @@ header{
     letter-spacing: 1.08px;
     padding: 0;
     text-align: center;
-
+    margin-bottom: 50px;
 
 }
 
 .work_img {
-    list-style: none;
-    display: flex;
+    display: flex   ;
     padding: 0;
-
-
+    list-style: none;
+    margin: 0;
 }
 
-.work_box {
-    margin-top: 50px;
-    margin-right: 30px;
+.work_item + .work_item {
+    margin-left: 30px;
+    
 }
 
 
@@ -271,6 +265,7 @@ header{
     display: flex;
     list-style: none;
     padding: 0;
+    margin: 0;
     
 
 }
@@ -307,20 +302,11 @@ header{
 }
 
 
-hr {
-    width: 1600px;
-    background: #ECECEC;
-    position: relative;
-    margin-bottom: 0;
-
-
-}
-
 .catalog_menu {
-    height: 54px;
     margin: 0 auto; 
-    padding-bottom: 56px;
+    margin-bottom: 50px;
     text-align: center;
+    padding: 0;
 
 }
 
@@ -342,7 +328,7 @@ hr {
 }
 
 
-.catalog_btn-item + .catalog_btn-item{
+.catalog_btn-item + .catalog_btn-item{ 
     margin-right: 8px;
 }
 
@@ -413,20 +399,22 @@ hr {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    width: 1600px;
     padding: 0;
-    margin: 0;  
+    margin: 0;
+    grid-template-columns: 30px 30px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.grid_item {    
+    display: grid;
+    max-width: 370px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    
     
 }
 
-.grid_item {
-    margin-left: 30px;
-    margin-bottom: 50px;
-    border: 1px solid #EEE;
-    background: #FFF;
-    padding: 0;
-     
-}
 
 
 .catalog_card-title {
@@ -436,7 +424,7 @@ hr {
     line-height: 2;
     letter-spacing: 1.08px;
     margin-bottom: 4px;
-    margin-left: 24px;
+    padding: 0 24px;
 }
 
 
@@ -447,17 +435,13 @@ hr {
     line-height: 2;
     letter-spacing: 0.48px;
     margin-top: 0;
-    margin-left: 24px;
+    padding: 0 24px;
     margin-bottom: 20px;
 }
 
 .footer {
-    width: 1600px;
-    height: 252px;
-    background: var(--main-color);
-
-    
-    
+    padding: 60px 0;
+    background: var(--main-color);  
 }
 
 
@@ -470,32 +454,33 @@ hr {
     line-height: 1;
     letter-spacing: 0.78px;
     text-decoration: none;
-    align-items: center;
-
-
-
+   
+    
 }
 
 .address {
-    padding-top: 60px;
-    padding-left: 15px;
+    margin-top: 20px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.60);
     line-height: 1.7;
-  
+    
 
 }
 
 
-.address_link {
-    margin-top: 20px;
-    margin-bottom: 8px;
+.address_link { 
     color: #FFF;
-    
-
+    display: block;
+    margin: 0;  
+    line-height: 1.7;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    margin-bottom: 9px;
 }
 
 .email_link {
@@ -503,13 +488,13 @@ hr {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.7;
     letter-spacing: 0.42px;
     text-decoration: none;
     cursor: pointer;
     display: block;
-    margin-top: -5px;
-    margin-bottom: -5px;
+    margin-bottom: 9px;
+
 
 }
 
@@ -518,12 +503,11 @@ hr {
 }
 
 .phone_link {
-    margin-top: 8px;
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.7;
     letter-spacing: 0.42px;
     text-decoration: none;
     cursor: pointer;
