@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+h3{
+    text-decoration: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif, 'Raleway';
     color: #544837;
@@ -12,7 +16,7 @@ body {
 
 header{
     border-bottom: 1px solid #ECECEC;;
-    text-align: center;
+    
     
 }
 
@@ -229,7 +233,7 @@ header{
 }
 
 .work_img {
-    display: flex   ;
+    display: flex;
     padding: 0;
     list-style: none;
     margin: 0;
@@ -240,6 +244,9 @@ header{
     
 }
 
+.work_box{
+    display: block;
+}
 
 .team {
     background: #F5F4FA;
@@ -283,12 +290,22 @@ header{
 
 }
 
+.team_img{
+    display: block;
+}
+
+.team_info{
+    padding: 30px 0;
+}
+
 .team_name{
     color: #212121;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
+    margin-top: 0;
 
 }
 
@@ -298,21 +315,24 @@ header{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
-    
+    margin: 0;
 }
 
 
 .catalog_menu {
     margin: 0 auto; 
     margin-bottom: 50px;
-    text-align: center;
+    display: flex;
     padding: 0;
+    justify-content: center; 
+  
 
 }
 
+
+
 .catalog_btn {
     padding: 6px 22px;
-    display: inline;
     border-radius: 4px;
     border: 2px solid transparent;
     font-size: 16px;
@@ -328,8 +348,8 @@ header{
 }
 
 
-.catalog_btn-item + .catalog_btn-item{ 
-    margin-right: 8px;
+.catalog_btn-item + .catalog_btn-item{
+    margin-left: 8px;
 }
 
 
@@ -343,7 +363,6 @@ header{
     padding: 6px 25px;
     width: auto;
     height: 38px;
-    display: inline;
     border-radius: 4px;
     border: 2px solid transparent;
     font-size: 16px;
@@ -354,7 +373,7 @@ header{
     color: #212121;
     background-color: #F5F4FA;
     outline: none;
-    margin-right: 8px;
+    
     
     
 }
@@ -385,8 +404,7 @@ header{
 }
 
 .catalog_btn-item{
-    list-style: none;
-    display: inline;    
+    list-style: none;   
     
 }
 
@@ -404,18 +422,25 @@ header{
     grid-template-columns: 30px 30px;
     grid-row-gap: 30px;
     grid-column-gap: 30px;
+    
 }
 
 .grid_item {    
-    display: grid;
-    max-width: 370px;
+    width: 370px;
     border: 1px solid #EEE;
     background: #FFF;
-    
+
     
 }
 
+.grid_link{
+    text-decoration: none;
+}
 
+.catalog_info{
+    padding: 20px 0;
+    border: 1px solid #EEE;
+}
 
 .catalog_card-title {
     color: #212121;
@@ -425,6 +450,8 @@ header{
     letter-spacing: 1.08px;
     margin-bottom: 4px;
     padding: 0 24px;
+    margin-top: 0;
+    
 }
 
 
@@ -436,7 +463,12 @@ header{
     letter-spacing: 0.48px;
     margin-top: 0;
     padding: 0 24px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    
+}
+
+.catalog_card-img{
+    display: block;
 }
 
 .footer {
